@@ -87,24 +87,6 @@ python -m spacy download en_core_web_sm
 python -m spacy download zh_core_web_sm
 ```
 
-## 上传 Streamlit 平台
-
-上传到 Streamlit Community Cloud 时，请至少包含以下文件：
-
-- `app.py`
-- `style.css`
-- `requirements.txt`
-- `runtime.txt`
-- `.streamlit/config.toml`
-
-`requirements.txt` 中已经包含 spaCy 与中英文模型 wheel 的 GitHub 下载地址，Streamlit Cloud 会在部署时自动安装。
-
-部署入口文件选择：
-
-```text
-app.py
-```
-
 ## 示例输入
 
 ```text

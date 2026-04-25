@@ -1,0 +1,19 @@
+# Python 3.10+ is recommended.
+#
+# Core web framework used by app.py.
+streamlit==1.45.1
+
+# NLP engine used for general NER.
+spacy>=3.8.0,<3.9.0
+
+# spaCy language models used by the app.
+# Streamlit Cloud can install model wheels directly from GitHub release URLs.
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+https://github.com/explosion/spacy-models/releases/download/zh_core_web_sm-3.8.0/zh_core_web_sm-3.8.0-py3-none-any.whl
+
+# app.py also uses Python standard-library modules:
+# html, json, re, dataclasses, pathlib, typing.
+#
+# The knowledge graph is rendered with browser-side vis-network.js:
+# https://unpkg.com/vis-network/standalone/umd/vis-network.min.js
+# It is loaded in app.py via a CDN script tag, so no Python package is needed.
